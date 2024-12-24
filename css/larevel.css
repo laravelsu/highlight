@@ -1,0 +1,130 @@
+pre, code {
+    padding: 1em 1.5em;
+    margin: 0.5em 0;
+    overflow: auto;
+    color: #BFC7D5;
+    background-color: #0c0c0c;
+}
+
+.hl-attribute{
+    color: #FFCB6B;
+}
+
+.hl-constant{
+    color: #82AAFF;
+}
+
+.hl-function{
+    color: #82AAFF;
+}
+
+.hl-template{
+    color: #A9C77D;
+}
+
+.hl-slug{
+    color: #FF5874;
+}
+
+.hl-delimeter{
+    color: #89DDFF;
+}
+
+.hl-operator{
+    color: #C792EA;
+}
+
+.hl-tag {
+    color: #D3423E;
+}
+
+.hl-tag2{
+    color: #FF5572;
+}
+
+.hl-keyword {
+    color: #C792EA;
+}
+
+.hl-property {
+    color: #82AAFF;
+}
+
+.hl-property2{
+    color: #89DDFF;
+}
+
+.hl-type {
+    color: #FFCB8B;
+}
+
+.hl-generic {
+    color: #0000ff;
+}
+
+.hl-value {
+    color: #C3E88D;
+}
+
+.hl-value2 {
+    color: #80CBC4;
+}
+
+.hl-literal {
+    color: #a31515;
+}
+
+.hl-number {
+    color: #F78C6C;
+}
+
+.hl-variable {
+    color: #BEC5D4;
+}
+
+.hl-comment {
+    color: #697098;
+}
+
+.hl-blur {
+    filter: blur(2px);
+}
+
+.hl-strong {
+    font-weight: bold;
+}
+
+.hl-em {
+    font-style: italic;
+}
+
+.hl-deletion {
+    min-width: 100%;
+    background-color: #FF000033;
+    color: #f07178;
+}
+
+.hl-addition {
+    min-width: 100%;
+    background-color: #99b76d33;
+    color: #C3E88D;
+}
+
+.hl-gutter {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #555;
+    padding: 0 1ch;
+    margin-right: 1ch;
+    user-select: none;
+}
+
+.hl-gutter-addition {
+    background-color: #34A853;
+    color: #fff;
+}
+
+.hl-gutter-deletion {
+    background-color: #EA4334;
+    color: #fff;
+}

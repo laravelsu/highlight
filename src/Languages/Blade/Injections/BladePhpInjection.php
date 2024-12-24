@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Laravelsu\Highlight\Languages\Blade\Injections;
+
+use Tempest\Highlight\Highlighter;
+use Tempest\Highlight\Injection;
+use Tempest\Highlight\IsInjection;
+use Tempest\Highlight\Escape;
+
+final readonly class BladePhpInjection implements Injection
+{
+    use IsInjection;
+
+    public function getPattern(): string
+    {
+        return '/(?<match>(\@php|<\?php)(.|\n)*?(\@endphp|\?>))/';
+    }
+
+    public function parseContent(string $content, Highlighter $highlighter): string
+    {
+        $clear_content = Escape::terminal($content);
+        return $highlighter->parse($clear_content, 'php');
+    }
+}

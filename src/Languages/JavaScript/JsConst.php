@@ -1,0 +1,61 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Laravelsu\Highlight\Languages\JavaScript;
+
+class JsConst
+{
+    public const JS_KEYWORDS = [
+        'as',
+        'async',
+        'await',
+        'break',
+        'case',
+        'catch',
+        'class',
+        'const',
+        'constructor',
+        'continue',
+        'debugger',
+        'default',
+        'delete',
+        'do',
+        'else',
+        'enum',
+        'eval',
+        'export',
+        'extends',
+        'finally',
+        'for',
+        'from',
+        'function',
+        'get',
+        'if',
+        'implements',
+        'import',
+        'in',
+        'instanceof',
+        'interface',
+        'let',
+        'new',
+        'of',
+        'package',
+        'private',
+        'protected',
+        'public',
+        'return',
+        'set',
+        'static',
+        'super',
+        'switch',
+        'throw',
+        'try',
+        'typeof',
+        'var',
+        'void',
+        'while',
+        'with',
+        'yield',
+    ];
+}

@@ -1,0 +1,20 @@
+{
+    "name": "laravelsu/highlight",
+    "description": "Laravel.su package code-highlighter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitriy Butko",
+            "email": "demn98@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "tempest/highlight": "^2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravelsu\\Highlight\\": "src/"
+        }
+    }
+}
