@@ -1,16 +1,30 @@
 {
     "name": "laravelsu/highlight",
     "description": "Laravel.su package code-highlighter",
+    "keywords": [
+        "highlight",
+        "syntax-highlighting",
+        "code-highlighter",
+        "code-formatting",
+        "highlighting",
+        "text-editor",
+        "code-syntax",
+        "markdown"
+    ],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Dmitriy Butko",
-            "email": "demn98@gmail.com"
+            "email": "demn98@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.3",
-        "tempest/highlight": "^2.11"
+        "tempest/highlight": "^2.11",
+        "league/commonmark": "^2.6",
+        "laravel/pint": "^1.18"
     },
     "autoload": {
         "psr-4": {
