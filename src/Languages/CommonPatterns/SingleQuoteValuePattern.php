@@ -18,7 +18,8 @@ final class SingleQuoteValuePattern implements Pattern
 
     public function __construct(
         private string $tokenType = 'hl-value',
-    ) {
+    )
+    {
     }
 
     public function canNotContain(): self
@@ -35,13 +36,10 @@ final class SingleQuoteValuePattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        if ($this->canNotContain)
-        {
+        if ($this->canNotContain) {
             return new CanNotContainTokenType($this->tokenType);
         }
-        else
-        {
-            return new DynamicTokenType($this->tokenType);
-        }
+
+        return new DynamicTokenType($this->tokenType);
     }
 }

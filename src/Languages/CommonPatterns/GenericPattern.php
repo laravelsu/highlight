@@ -19,7 +19,8 @@ final class GenericPattern implements Pattern
     public function __construct(
         private string $pattern,
         private string $tokenType,
-    ) {
+    )
+    {
     }
 
     public function canNotContain(): self
@@ -36,13 +37,10 @@ final class GenericPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        if ($this->canNotContain)
-        {
+        if ($this->canNotContain) {
             return new CanNotContainTokenType($this->tokenType);
         }
-        else
-        {
-            return new DynamicTokenType($this->tokenType);
-        }
+
+        return new DynamicTokenType($this->tokenType);
     }
 }

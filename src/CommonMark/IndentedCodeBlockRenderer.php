@@ -35,8 +35,8 @@ final class IndentedCodeBlockRenderer implements NodeRendererInterface
 
         if ($theme instanceof WebTheme) {
             return $theme->preBefore($highlighter) . $parsed . $theme->preAfter($highlighter);
-        } else {
-            return '<pre data-lang="' . $language . '" class="notranslate">' . $parsed . '</pre>';
         }
+
+        return sprintf('<pre data-lang="%s" class="notranslate">%s</pre>', $language, $parsed);
     }
 }

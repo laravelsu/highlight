@@ -21,7 +21,8 @@ final class KeywordPattern implements Pattern
     public function __construct(
         private string $keyword,
         private string $tokenType = 'hl-keyword',
-    ) {
+    )
+    {
     }
 
     public function caseInsensitive(): self
@@ -51,13 +52,10 @@ final class KeywordPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        if ($this->canNotContain)
-        {
+        if ($this->canNotContain) {
             return new CanNotContainTokenType($this->tokenType);
         }
-        else
-        {
-            return new DynamicTokenType($this->tokenType);
-        }
+
+        return new DynamicTokenType($this->tokenType);
     }
 }
