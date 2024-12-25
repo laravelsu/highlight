@@ -23,12 +23,12 @@ use Laravelsu\Highlight\Languages\Json\JsonLanguage;
 use Laravelsu\Highlight\Languages\Sql\SqlLanguage;
 use Laravelsu\Highlight\Languages\Yaml\YamlLanguage;
 use Laravelsu\Highlight\Languages\ExtendedCss\ExtendedCssLanguage;
-use App\MarkDown\CustomHL\Languages\Html\HtmlLanguage;
+use Laravelsu\Highlight\Languages\Html\HtmlLanguage;
 
 final class HighlightExtension implements ExtensionInterface
 {
     public function __construct(
-        private ?Highlighter $highlighter = new Highlighter(),  //new InlineTheme(__DIR__ . '/../style.css')),  //   (),
+        private Highlighter $highlighter = new Highlighter(),  //new InlineTheme(__DIR__ . '/../style.css')),  //   (),
     ) {
         $this->highlighter->addLanguage(new PhpLanguage());
         $this->highlighter->addLanguage(new ShellLanguage());
