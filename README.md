@@ -30,9 +30,20 @@ $environment
 $markdown = new MarkdownConverter($environment);
 ```
 
-
 ### Примеры CSS
 
 Стили для подсветки синтаксиса находятся в директории `css`. 
 Вы можете скопировать их как есть или настроить под свои нужды.
 
+### Использование инлайновых стилей
+
+Если требуется вставлять стили непосредственно в HTML, например `style="color:#000""` вместо css классов.
+Для этого укажите путь к CSS-файлу при создании расширения:
+
+```php
+$themePath = '/highlight/light.css'
+
+$environment
+    ->addExtension(new CommonMarkCoreExtension())
+    ->addExtension(new HighlightExtension($themePath));
+```
