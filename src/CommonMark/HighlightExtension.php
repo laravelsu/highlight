@@ -21,7 +21,6 @@ use League\CommonMark\Environment\EnvironmentBuilderInterface;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;
 use League\CommonMark\Extension\ExtensionInterface;
-use Tempest\Highlight\CommonMark\CodeBlockRenderer;
 use Tempest\Highlight\Highlighter;
 use Tempest\Highlight\Themes\CssTheme;
 use Tempest\Highlight\Themes\InlineTheme;
