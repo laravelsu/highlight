@@ -15,28 +15,30 @@ use Tempest\Highlight\WebTheme;
 final class IndentedCodeBlockRenderer implements NodeRendererInterface
 {
     public function __construct(
-        private ?Highlighter $highlighter = new Highlighter(),
-    ) {
-    }
+        private Highlighter $highlighter,
+        private string $defaultLanguage = 'php'
+    ) {}
 
     public function render(Node $node, ChildNodeRendererInterface $childRenderer)
     {
         if (! $node instanceof IndentedCode) {
-            throw new InvalidArgumentException('Block must be instance of ' . IndentedCode::class);
+            throw new InvalidArgumentException('Block must be instance of '.IndentedCode::class);
         }
-        
+
         $highlighter = $this->highlighter;
 
-        $language = 'php';
-
-        $parsed = $highlighter->parse($node->getLiteral(), $language);
+        $parsed = $highlighter->parse($node->getLiteral(), $this->defaultLanguage);
 
         $theme = $highlighter->getTheme();
 
         if ($theme instanceof WebTheme) {
-            return $theme->preBefore($highlighter) . $parsed . $theme->preAfter($highlighter);
+            return $theme->preBefore($highlighter).$parsed.$theme->preAfter($highlighter);
         }
 
-        return sprintf('<pre data-lang="%s" class="notranslate">%s</pre>', $language, $parsed);
+        return sprintf(
+            '<pre><code data-lang="%s" class="notranslate">%s</code></pre>',
+            $this->defaultLanguage,
+            $parsed
+        );
     }
 }
