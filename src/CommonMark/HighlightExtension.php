@@ -22,8 +22,8 @@ use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;
 use League\CommonMark\Extension\ExtensionInterface;
 use Tempest\Highlight\Highlighter;
-use Tempest\Highlight\Themes\CssTheme;
-use Tempest\Highlight\Themes\InlineTheme;
+use Laravelsu\Highlight\Themes\CssTheme;
+use Laravelsu\Highlight\Themes\InlineTheme;
 
 /**
  * Extension for adding syntax highlighting to CommonMark.
