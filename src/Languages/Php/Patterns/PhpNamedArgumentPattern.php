@@ -20,6 +20,6 @@ final readonly class PhpNamedArgumentPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-property');
+        return new DynamicTokenType('hl-argument');
     }
 }

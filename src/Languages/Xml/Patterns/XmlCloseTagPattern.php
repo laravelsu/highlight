@@ -20,6 +20,6 @@ final readonly class XmlCloseTagPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-tag2');
+        return new DynamicTokenType('hl-tag');
     }
 }

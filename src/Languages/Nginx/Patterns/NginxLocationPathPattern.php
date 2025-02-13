@@ -20,6 +20,6 @@ final readonly class NginxLocationPathPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-value2');
+        return new DynamicTokenType('hl-location-value');
     }
 }

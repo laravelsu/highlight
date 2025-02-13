@@ -20,6 +20,6 @@ final readonly class PhpCloseTagPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-tag');
+        return new DynamicTokenType('hl-system-tag');
     }
 }

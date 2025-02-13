@@ -20,6 +20,6 @@ final readonly class JsonDoubleQuoteValuePattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new CanNotContainTokenType('hl-value2');
+        return new CanNotContainTokenType('hl-json-value');
     }
 }

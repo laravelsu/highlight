@@ -6,39 +6,51 @@ pre, code {
     background-color: #0c0c0c;
 }
 
-.hl-attribute{
+.hl-attribute {
     color: #FFCB6B;
 }
 
-.hl-constant{
+.hl-constant {
     color: #82AAFF;
 }
 
-.hl-function{
+.hl-function {
     color: #82AAFF;
 }
 
-.hl-template{
+.hl-template {
     color: #A9C77D;
 }
 
-.hl-slug{
+.hl-slug {
     color: #FF5874;
 }
 
-.hl-delimeter{
+.hl-delimeter {
     color: #89DDFF;
 }
 
-.hl-operator{
+.hl-operator {
     color: #C792EA;
 }
 
-.hl-tag {
+.hl-start-end-tag {
+    color: #89DDFF;
+}
+
+.hl-system-tag {
     color: #D3423E;
 }
 
-.hl-tag2{
+.hl-tag {
+    color: #FF5572;
+}
+
+.hl-this-keyword {
+    color: #FF5572;
+}
+
+.hl-doctype-keyword {
     color: #FF5572;
 }
 
@@ -46,11 +58,11 @@ pre, code {
     color: #C792EA;
 }
 
-.hl-property {
+.hl-argument {
     color: #82AAFF;
 }
 
-.hl-property2{
+.hl-property {
     color: #89DDFF;
 }
 
@@ -66,7 +78,11 @@ pre, code {
     color: #C3E88D;
 }
 
-.hl-value2 {
+.hl-json-value {
+    color: #80CBC4;
+}
+
+.hl-location-value {
     color: #80CBC4;
 }
 

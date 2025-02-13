@@ -20,6 +20,6 @@ final readonly class JsPropertyPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-property2');
+        return new DynamicTokenType('hl-property');
     }
 }

@@ -32,9 +32,9 @@ final readonly class JsonArrayInjection implements Injection
         foreach($match['match'] as $val) {
             $content = preg_replace(
                 '/' . addcslashes($val[0], '/*') . '[\b]*/',
-                Escape::tokens($theme->before(new DynamicTokenType('hl-value2')))
+                Escape::tokens($theme->before(new DynamicTokenType('hl-json-value')))
                 . $val[0]
-                . Escape::tokens($theme->after(new DynamicTokenType('hl-value2'))),
+                . Escape::tokens($theme->after(new DynamicTokenType('hl-json-value'))),
                 $content,
             );
         }

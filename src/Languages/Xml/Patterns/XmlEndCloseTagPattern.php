@@ -20,6 +20,6 @@ final readonly class XmlEndCloseTagPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-delimeter');
+        return new DynamicTokenType('hl-start-end-tag');
     }
 }

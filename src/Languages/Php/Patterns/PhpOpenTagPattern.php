@@ -20,6 +20,6 @@ final readonly class PhpOpenTagPattern implements Pattern
 
     public function getTokenType(): TokenType
     {
-        return new DynamicTokenType('hl-tag');
+        return new DynamicTokenType('hl-system-tag');
     }
 }

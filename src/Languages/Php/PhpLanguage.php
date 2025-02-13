@@ -77,7 +77,7 @@ class PhpLanguage extends CustomBaseLanguage
             // KEYWORDS
             new KeywordPattern($keywords),
             new KeywordPattern('(null|true|false|instanceof|echo|new)', 'hl-constant'),
-            new GenericPattern('/(?<match>\$this)(\-|\$|\,|\)|\;|\:|\s|\(|\])/', 'hl-tag2'),
+            new GenericPattern('/(?<match>\$this)(\-|\$|\,|\)|\;|\:|\s|\(|\])/', 'hl-this-keyword'),
             new GenericPattern('/\->\b(?<match>[\w]+?)\b(?!\()/', 'hl-delimeter'),
             new GenericPattern('/(?<match>\+\+)/', 'hl-constant'),
             new GenericPattern('/\((?<match>(string))\)/', 'hl-keyword'),
