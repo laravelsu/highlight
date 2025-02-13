@@ -12,18 +12,22 @@ use Laravelsu\Highlight\Languages\CustomBase\Injections\TLAddMultilineEndInjecti
 use Laravelsu\Highlight\Languages\CustomBase\Injections\TLRemoveMultilineStartInjection;
 use Laravelsu\Highlight\Languages\CustomBase\Injections\TLRemoveMultilineEndInjection;
 
+use Laravelsu\Highlight\Languages\CustomBase\Injections\CustDeletionInjection;
+
 abstract class CustomBaseLanguage extends BaseLanguage
 {
     public function getInjections(): array
     {
         return [
-            ...parent::getInjections(),
             new TLAddInjection(),
             new TLRemoveInjection(),
             new TLAddMultilineStartInjection(),
             new TLAddMultilineEndInjection(),
             new TLRemoveMultilineStartInjection(),
             new TLRemoveMultilineEndInjection(),
+            
+            new CustDeletionInjection(),
+            ...parent::getInjections()
         ];
     }
 
